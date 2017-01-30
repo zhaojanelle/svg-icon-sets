@@ -2,6 +2,7 @@
 summary: 'Use SVG icons sets to create a small layout with different icon.'
 time: '2 hours'
 deliverables: '1 HTML file, 2 CSS file, images'
+download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-4/svg-icon-sets-download.zip'
 ---
 
 # SVG icon sets
