@@ -17,6 +17,9 @@ html:
     performance: true
     has:
       - ['link[href*="Overpass"]', 'The Google Font, `Overpass` (regular & bold) is missing']
+      - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
+      - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
+      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
       - 'i > svg > use'
       - 'section'
       - '.grid > .unit'
