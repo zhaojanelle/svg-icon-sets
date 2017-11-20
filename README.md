@@ -1,8 +1,8 @@
 ---
-summary: 'Use SVG icons sets to create a small layout with different icon.'
+summary: 'Use SVG icons sets to create a small layout with different icons.'
 time: '2 hours'
 deliverables: '1 HTML file, 4 CSS files, images'
-download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-4/svg-icon-sets-download.zip'
+download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/svg-icon-sets-download.zip'
 ---
 
 # SVG icon sets
@@ -19,7 +19,7 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-4/svg-icon-se
 
 ## Details
 
-- *Typefaces:* `Overpass`
+- *Typefaces:* `Overpass` (regular & bold)
 - *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, 1)` (with the alpha adjusted)
 - *Icon size CSS class:* `.i-192`
 - *Gridifier settings:* defaults
@@ -30,9 +30,10 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-4/svg-icon-se
 
 ## Goal
 
-Visually match the images in the “screenshots” folder.
+Visually match the images in the “screenshots” folder and create the interaction shown in the linked video.
 
 - Final screenshots in the “screenshots” folder.
+- [**Watch this video to see how it interacts.**](https://youtu.be/gIQtPYJ2d3s)
 
 ---
 

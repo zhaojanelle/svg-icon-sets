@@ -1,25 +1,22 @@
 repo: 'svg-icon-sets'
-canvasCourse: 'web-dev-4'
+canvasCourse: 'web-dev-3'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - modulifier
+  - gridifier
+  - typografier
+  - css-order-modules-grid-type-main
+  - google-fonts
 
 html:
   - path: 'index.html'
-    valid: true
-    bestPractices: true
-    performance: true
+    outline: false
     has:
       - ['link[href*="Overpass"]', 'The Google Font, `Overpass` (regular & bold) is missing']
-      - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
-      - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
-      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
       - 'i > svg > use'
       - 'section'
       - '.grid > .unit'
@@ -28,15 +25,7 @@ html:
     hasNot:
       - 'img'
     search:
-      - 'xs-'
-      - 's-'
-      - 'm-'
-      - 'l-'
-      - 'gutter'
-      - 'pad'
-      - 'push'
       - 'max-length'
-      - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
       - 'Mars colonization structures'
       - 'Space bubbles'
       - 'Super domes'
@@ -45,8 +34,6 @@ html:
 
 css:
   - path: 'css/main.css'
-    valid: true
-    bestPractices: true
     has:
       - ['html', 'font-family', 'Overpass, sans-serif']
       - ['@60']
@@ -76,3 +63,14 @@ css:
 screenshots:
   - path: 'index.html'
     sizes: [320, 400, 608, 960, 1440]
+
+functionality:
+  - path: 'index.html'
+    test: |
+      const btn = $('.grid > .unit:nth-child(3) .btn-ghost');
+      const oldBg = css(btn).backgroundColor;
+
+      hover(btn, () => {
+        if (oldBg == css(btn).backgroundColor) return fail('The background colour of the button doesn’t change when hovered');
+        pass();
+      });
