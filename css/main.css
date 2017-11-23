@@ -2,4 +2,10 @@ html {
   font-family: "Overpass", sans-serif;
   background: linear-gradient(#ff9500,#ff5e3a);
   background-repeat: no-repeat;
+  color: #fff;
+}
+
+svg {
+  fill: #fff;
+  stroke: #ff9500;
 }
