@@ -45,6 +45,8 @@ h1 {
   .bubbles, .domes, .stilts {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
   }
 
 }
