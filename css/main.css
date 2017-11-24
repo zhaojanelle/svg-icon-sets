@@ -7,5 +7,20 @@ html {
 
 svg {
   fill: #fff;
-  stroke: #ff9500;
+  stroke: rgba(255, 255, 255, 0);
+}
+
+.btn-ghost {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  background-color: #fff;
+  color: #ff5e3a;
+  border-color: #fff;
+}
+
+.unit {
+  border-bottom: .5px solid #fff;
 }
