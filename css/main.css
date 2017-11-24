@@ -21,6 +21,25 @@ svg {
   border-color: #fff;
 }
 
-.unit {
-  border-bottom: .5px solid #fff;
+.bubbles, .domes {
+  border-bottom: 1px solid #fff;
+}
+
+.bubbles, .domes, .stilts {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .bubbles, .domes {
+    border-bottom: 0;
+    border-right: 1px solid #fff;
+  }
+
+  .bubbles, .domes, .stilts {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
